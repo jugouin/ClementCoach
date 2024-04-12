@@ -1,0 +1,302 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-repeat: round;
+  color: white;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main {
+  min-height: 77vh;
+}
+
+header, footer {
+  background-color: #001D26;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+header a, nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 8vh;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 112px;
+  height: 108px;
+  margin: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 90%;
+}
+
+.navbar ul {
+  width: 100%;
+  margin-left: 112px;
+  color: #58595B;
+}
+
+.navbar ul li {
+  display: inline-flex;
+  margin: 1%;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  height: 6vh;
+  bottom: 0;
+  justify-content: center;
+  font-weight: 100;
+}
+
+footer > p {
+  margin: 1%;
+}
+
+.button-custom {
+  background-color: #008090;
+  border: 1px solid #001D26;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.button-delete {
+  background-color: #008090;
+  color: white;
+  border: none;
+}
+.button-delete-hostForm {
+  background-color: #001D26;
+  margin: -40px;
+  color: white;
+  border: none;
+}
+/** HomePage, WelcomeCourse */
+
+.home-wrapper section, .form {
+  background-color: #001D26;
+  padding: 30px;
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.presentation {
+  display: flex;
+}
+
+.presentation .content {
+  margin-left: 20px;
+}
+
+.home-wrapper .pictures {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-wrapper .pictures > img {
+  height: 18vh;
+
+}
+
+/** userProfil.php*/
+
+.profil {
+  background-color: #001D26;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 20px;
+}
+
+.img_picture {
+  height:100px;
+  margin: -20px 20px 20px 20px;
+}
+
+/** calendar.php */
+
+
+.calendar-wrapper {
+  width: 70%;
+  margin: auto;
+  background-color: #001D26;
+  border-radius: 10px;
+}
+
+.calendar-wrapper .calendar-header {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 38px;
+  padding: 25px 7vw 10px;
+  justify-content: space-between;
+}
+
+
+.calendar-header .icons button {
+  color: white;
+  background-color: #001D26;
+  border: none;
+  font-size: 38px;
+  cursor: pointer;
+}
+.calendar {
+  padding: 20px;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.calendar .weeks li{
+  font-weight: 500;
+}
+
+.calendar ul li {
+  position: relative;
+  width: calc(100% / 7);
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.days li.inactive{
+  color: #58595B;
+}
+
+.days li.reservation{
+  background-color: #008090;
+  border-radius: 10px;
+}
+
+.days li.reservation:hover::before {
+  background-color: #019cb0;
+  border-radius: 10px;
+}
+
+.days li.active{
+  color: #008090;
+}
+
+.calendar .days li::before{
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: calc(100%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  border: #001D26;
+}
+
+
+/** course.php */
+
+.course-wrapper {
+  display: block;
+  width: 70%;
+  background-color: #001D26;
+  border-radius: 10px;
+  padding: 2vw;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+
+}
+
+h3 {
+  padding: 25px 7vw 10px;
+}
+
+.course-wrapper section > div {
+  margin-left: 10vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/** Modal.php */
+
+.modal-wrapper {
+  display: block;
+  width: 70%;
+  background-color: #001D26;
+  border-radius: 10px;
+  padding: 2vw;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/** admin.php */
+
+.modal-col {
+  background-color: #001D26;
+  border-radius: 10px;
+  padding: 1vw;
+  padding-bottom: 15px;
+  margin: 40px;
+  margin-bottom: 20px;
+}
+
+.modal-col h3 {
+  padding: 10px;
+}
+
+/** hostingPropostion.php */ 
+
+.host-container {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.host-wrapper {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 27%;
+  background-color: #001D26;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.host-box {
+  padding: 3vw;
+}
+
+.card {
+  color: white;
+  background-color: #008090;
+}
