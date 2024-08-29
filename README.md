@@ -1,4 +1,4 @@
-Ce projet visait à créer un plateforme de réservation de créneau de Pilates en ligne. Cette plateforme sera administrée par un indépendant qui pourra gérer ses réservations et accéder aux profils de ses clients. 
+Ce projet vise à créer un plateforme de réservation de créneau de Pilates en ligne. Cette plateforme sera administrée par un indépendant qui pourra gérer ses réservations et accéder aux profils de ses clients. 
 
 Dans notre cas il s’agit du professeur de Pilates Clément Dagoneau qui débute son activité en Savoie. Il propose à ses clients des cours de Pilates à domicile en individuel ou en groupe. Ses clients ont la possibilité de créer un profil utilisateur afin de renseigner leur niveau de pratique et leurs disponibilités. Étant aux prémices de son activité et ne pouvant pas héberger les cours de Pilates, il souhaiterait proposer une réduction tarifaire aux personnes qui souhaite accueillir des séances chez elles. 
 
